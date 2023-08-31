@@ -14,10 +14,10 @@ public class OddEvenComparator implements Comparator<Integer> {
             return -1;
 
         } else if (x % 2 == 0 && y % 2 == 0) {
-            return Integer.compare(x, y);
+            return x - y;
 
         } else if (x % 2 != 0 && y % 2 != 0) {
-            return Integer.compare(y, x);
+            return y - x;
         } else {
             return 0;
         }
